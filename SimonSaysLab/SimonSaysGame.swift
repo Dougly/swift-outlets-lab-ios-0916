@@ -92,20 +92,20 @@ extension SimonSays {
         return patternToMatch[chosenColors.count - 1] == color
     }
 
-    mutating func guessRed() {
-        makeGuessWith(.red)
+    mutating func guessRed() -> Bool {
+        return makeGuessWith(.red)
     }
     
-    mutating func guessGreen() {
-        makeGuessWith(.green)
+    mutating func guessGreen() -> Bool {
+        return makeGuessWith(.green)
     }
     
-    mutating func guessYellow() {
-        makeGuessWith(.yellow)
+    mutating func guessYellow() -> Bool {
+        return makeGuessWith(.yellow)
     }
     
-    mutating func guessBlue() {
-        makeGuessWith(.blue)
+    mutating func guessBlue() -> Bool {
+        return makeGuessWith(.blue)
     }
     
     mutating func tryAgainWithTheSamePattern() {
